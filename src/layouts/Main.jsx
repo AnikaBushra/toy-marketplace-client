@@ -1,9 +1,11 @@
+import { Outlet } from "react-router-dom";
 
 
 const Main = () => {
     return (
         <div>
-            fsdfsfsf
+
+            <Outlet></Outlet>
         </div>
     );
 };
