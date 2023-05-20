@@ -13,7 +13,8 @@ export const router = createBrowserRouter([
         children: [
             {
                 path: '/',
-                element: <Home></Home>
+                element: <Home></Home>,
+                loader: async () => await fetch("http://localhost:5000/toys")
             },
             {
                 path: 'login',
