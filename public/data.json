@@ -1,0 +1,119 @@
+[
+    {
+        "category": "Racing Cars",
+        "item1": [
+            {
+                "picture": "image1.jpg",
+                "name": "Toy Car 1",
+                "price": "$10",
+                "rating": 4.5,
+                "sellerToyName": "Seller 1",
+                "availableQuantity": 5
+            },
+            {
+                "picture": "image2.jpg",
+                "name": "Toy Car 2",
+                "price": "$15",
+                "rating": 4.2,
+                "sellerToyName": "Seller 2",
+                "availableQuantity": 3
+            }
+        ],
+        "item2": [
+            {
+                "picture": "image1.jpg",
+                "name": "Toy Car 1",
+                "price": "$10",
+                "rating": 4.5,
+                "sellerToyName": "Seller 1",
+                "availableQuantity": 5
+            },
+            {
+                "picture": "image2.jpg",
+                "name": "Toy Car 2",
+                "price": "$15",
+                "rating": 4.2,
+                "sellerToyName": "Seller 2",
+                "availableQuantity": 3
+            }
+        ]
+    },
+    {
+        "category": "Futuristic Car",
+        "items1": [
+            {
+                "picture": "image3.jpg",
+                "name": "Toy Car 3",
+                "price": "$12",
+                "rating": 4.7,
+                "sellerToyName": "Seller 3",
+                "availableQuantity": 8
+            },
+            {
+                "picture": "image4.jpg",
+                "name": "Toy Car 4",
+                "price": "$20",
+                "rating": 4.9,
+                "sellerToyName": "Seller 4",
+                "availableQuantity": 2
+            }
+        ],
+        "items2": [
+            {
+                "picture": "image3.jpg",
+                "name": "Toy Car 3",
+                "price": "$12",
+                "rating": 4.7,
+                "sellerToyName": "Seller 3",
+                "availableQuantity": 8
+            },
+            {
+                "picture": "image4.jpg",
+                "name": "Toy Car 4",
+                "price": "$20",
+                "rating": 4.9,
+                "sellerToyName": "Seller 4",
+                "availableQuantity": 2
+            }
+        ]
+    },
+    {
+        "category": "Tractor",
+        "item1": [
+            {
+                "picture": "image5.jpg",
+                "name": "Toy Car 5",
+                "price": "$18",
+                "rating": 4.6,
+                "sellerToyName": "Seller 5",
+                "availableQuantity": 6
+            },
+            {
+                "picture": "image6.jpg",
+                "name": "Toy Car 6",
+                "price": "$25",
+                "rating": 4.8,
+                "sellerToyName": "Seller 6",
+                "availableQuantity": 4
+            }
+        ],
+        "items2": [
+            {
+                "picture": "image3.jpg",
+                "name": "Toy Car 3",
+                "price": "$12",
+                "rating": 4.7,
+                "sellerToyName": "Seller 3",
+                "availableQuantity": 8
+            },
+            {
+                "picture": "image4.jpg",
+                "name": "Toy Car 4",
+                "price": "$20",
+                "rating": 4.9,
+                "sellerToyName": "Seller 4",
+                "availableQuantity": 2
+            }
+        ]
+    }
+]
