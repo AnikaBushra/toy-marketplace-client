@@ -4,6 +4,8 @@ import NotFound from "../Pages/NotFound/NotFound";
 import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login/Login";
 import Registration from "../Pages/Registration/Registration";
+import AllToys from "../Pages/AllToys/AllToys";
+import AddAToys from "../Pages/AddAToys/AddAToys";
 
 export const router = createBrowserRouter([
     {
@@ -23,6 +25,15 @@ export const router = createBrowserRouter([
             {
                 path: 'registration',
                 element: <Registration></Registration>
+            },
+            {
+                path: 'allToys',
+                element: <AllToys></AllToys>,
+                loader: async () => await fetch("https://y-red-six.vercel.app/allToys")
+            },
+            {
+                path: 'addAToy',
+                element: <AddAToys></AddAToys>
             }
         ]
     }
