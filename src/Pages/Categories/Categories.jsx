@@ -3,6 +3,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 
 import { useLoaderData } from 'react-router-dom';
+import CategoryCard from './CategoryCard';
 
 
 const Categories = () => {
@@ -10,13 +11,10 @@ const Categories = () => {
 
     const datas = useLoaderData()
 
-    console.log(datas);
-    console.log(datas[0]?.category);
-
     return (
         <div>
             <h2 className='text-5xl text-center m-10'>Search by Categories</h2>
-            <div className='flex justify-around m-8'>
+            <div className='flex justify-around my-8'>
                 <Tabs>
                     <TabList>
                         <Tab><button className="btn btn-outline btn-success">{datas[0].category}</button></Tab>
@@ -24,20 +22,39 @@ const Categories = () => {
                         <Tab><button className="btn btn-outline btn-warning">{datas[1].category}</button></Tab>
                         <Tab><button className="btn btn-outline btn-error">{datas[2].category}</button></Tab>
                     </TabList>
-
-                    <TabPanel>
-                        <button className="btn btn-outline btn-secondary">Button</button>
-                        <button className="btn btn-outline btn-primary">Button</button>
-
-                    </TabPanel>
-                    <TabPanel>
-                        <button className="btn btn-outline btn-secondary">Button</button>
-                        <button className="btn btn-outline btn-accent">Button</button>
-                    </TabPanel>
-                    <TabPanel>
-                        <button className="btn btn-outline">Button</button>
-                        <button className="btn btn-outline btn-accent">Button</button>
-                    </TabPanel>
+                    {/* tab panel  */}
+                    <div>
+                        <TabPanel>
+                            <div className='grid grid-cols-1 lg:grid-cols-3 gap-6'>
+                                {
+                                    datas[0].items.map(item => <CategoryCard
+                                        key={item.picture}
+                                        item={item}
+                                    ></CategoryCard>)
+                                }
+                            </div>
+                        </TabPanel>
+                        <TabPanel>
+                            <div className='grid grid-cols-1 lg:grid-cols-3 gap-6'>
+                                {
+                                    datas[1].items.map(item => <CategoryCard
+                                        key={item.picture}
+                                        item={item}
+                                    ></CategoryCard>)
+                                }
+                            </div>
+                        </TabPanel>
+                        <TabPanel>
+                            <div className='grid grid-cols-1 lg:grid-cols-3 gap-6'>
+                                {
+                                    datas[2].items.map(item => <CategoryCard
+                                        key={item.picture}
+                                        item={item}
+                                    ></CategoryCard>)
+                                }
+                            </div>
+                        </TabPanel>
+                    </div>
                 </Tabs>
             </div>
         </div>

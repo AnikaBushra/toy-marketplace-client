@@ -1,118 +1,88 @@
 [
     {
         "category": "Racing Cars",
-        "item1": [
+        "items": [
             {
-                "picture": "image1.jpg",
-                "name": "Toy Car 1",
+                "picture": "https://img.freepik.com/free-photo/red-silver-car-with-word-ford-side_1340-23168.jpg?w=740&t=st=1684605841~exp=1684606441~hmac=44e9f69b2f952edd3ef8a6269b9a8c8db9e7494668d3d70a6dfc3bfc3279f47a",
+                "name": "Red Racing Car",
                 "price": "$10",
                 "rating": 4.5,
-                "sellerToyName": "Seller 1",
+                "sellerToyName": "Busy Bee",
                 "availableQuantity": 5
             },
             {
-                "picture": "image2.jpg",
-                "name": "Toy Car 2",
+                "picture": "https://img.freepik.com/free-photo/red-black-supercar-with-word-supercar-side_1340-23413.jpg?w=740&t=st=1684605909~exp=1684606509~hmac=cb647bedb904c48f91483548729a717b2f402d45f27ebab9756fd8a13a8813ab",
+                "name": "High Speed Racing Car",
                 "price": "$15",
                 "rating": 4.2,
-                "sellerToyName": "Seller 2",
+                "sellerToyName": "Speed",
                 "availableQuantity": 3
+            },
+            {
+                "picture": "https://img.freepik.com/free-photo/gold-orange-car-with-word-lotus-side_1340-23204.jpg?w=740&t=st=1684605973~exp=1684606573~hmac=172e5b1ddc1bbc3e830f20e1399940bb530f30af3a9bc4d9329b6e56851ace4f",
+                "name": "Yellow Racing Car",
+                "price": "$15",
+                "rating": 4.6,
+                "sellerToyName": "Racer",
+                "availableQuantity": 6
             }
-        ],
-        "item2": [
+        ]
+    },
+    {
+        "category": "Fire Trucks",
+        "items": [
             {
-                "picture": "image1.jpg",
-                "name": "Toy Car 1",
+                "picture": "https://img.freepik.com/free-photo/firefighters-truck-ready-his-mission_23-2149237355.jpg?w=740&t=st=1684606078~exp=1684606678~hmac=1d5275f8596618066eecab99537ea343cdb12a274d28154ec8532ce399415680",
+                "name": "Red Fire Trucks",
                 "price": "$10",
                 "rating": 4.5,
-                "sellerToyName": "Seller 1",
+                "sellerToyName": "Trucks",
                 "availableQuantity": 5
             },
             {
-                "picture": "image2.jpg",
-                "name": "Toy Car 2",
+                "picture": "https://img.freepik.com/free-vector/red-firetruck-with-rescue-ladder-fire-background_1284-11978.jpg?w=360&t=st=1684606148~exp=1684606748~hmac=f944f3a182383d31e149bb6c819070880a3763d96e1d92d6c2a7ffb980760e73",
+                "name": "FireTrucks",
                 "price": "$15",
-                "rating": 4.2,
-                "sellerToyName": "Seller 2",
+                "rating": 5,
+                "sellerToyName": "Seller trucks",
                 "availableQuantity": 3
+            },
+            {
+                "picture": "https://img.freepik.com/free-psd/3d-rendering-firefighter-icon_23-2149859768.jpg?w=360&t=st=1684606213~exp=1684606813~hmac=f4acc0bac194ff557326d32656836c294f1d849453798d39228fd33ad0bb91b0",
+                "name": "High Quality Trucks",
+                "price": "$15",
+                "rating": 2.2,
+                "sellerToyName": "Quality trucks",
+                "availableQuantity": 30
             }
         ]
     },
     {
         "category": "Futuristic Car",
-        "items1": [
+        "items": [
             {
-                "picture": "image3.jpg",
-                "name": "Toy Car 3",
-                "price": "$12",
+                "picture": "https://img.freepik.com/free-vector/modern-blue-urban-adventure-suv-vehicle-illustration_1344-205.jpg?w=360&t=st=1684606363~exp=1684606963~hmac=35768871728a81f4023ec082f3c3093a3da5921c665ecdadf0a71d340e45a045",
+                "name": "Futuristic Blue Car",
+                "price": "$10",
+                "rating": 4.5,
+                "sellerToyName": "Futuristic LTd",
+                "availableQuantity": 7
+            },
+            {
+                "picture": "https://img.freepik.com/free-vector/red-sedan-car-isolated-white-vector_53876-64366.jpg?w=740&t=st=1684606415~exp=1684607015~hmac=01e0f560dd2f0f490bbc7f8a530e88e1aa03126a74b6ed809e4a5f698654dfea",
+                "name": "Futuristic red Car",
+                "price": "$15",
                 "rating": 4.7,
-                "sellerToyName": "Seller 3",
-                "availableQuantity": 8
+                "sellerToyName": "Futuristic LTd",
+                "availableQuantity": 3
             },
             {
-                "picture": "image4.jpg",
-                "name": "Toy Car 4",
-                "price": "$20",
-                "rating": 4.9,
-                "sellerToyName": "Seller 4",
-                "availableQuantity": 2
-            }
-        ],
-        "items2": [
-            {
-                "picture": "image3.jpg",
-                "name": "Toy Car 3",
-                "price": "$12",
-                "rating": 4.7,
-                "sellerToyName": "Seller 3",
-                "availableQuantity": 8
-            },
-            {
-                "picture": "image4.jpg",
-                "name": "Toy Car 4",
-                "price": "$20",
-                "rating": 4.9,
-                "sellerToyName": "Seller 4",
-                "availableQuantity": 2
-            }
-        ]
-    },
-    {
-        "category": "Tractor",
-        "item1": [
-            {
-                "picture": "image5.jpg",
-                "name": "Toy Car 5",
-                "price": "$18",
-                "rating": 4.6,
-                "sellerToyName": "Seller 5",
-                "availableQuantity": 6
-            },
-            {
-                "picture": "image6.jpg",
-                "name": "Toy Car 6",
-                "price": "$25",
-                "rating": 4.8,
-                "sellerToyName": "Seller 6",
-                "availableQuantity": 4
-            }
-        ],
-        "items2": [
-            {
-                "picture": "image3.jpg",
-                "name": "Toy Car 3",
-                "price": "$12",
-                "rating": 4.7,
-                "sellerToyName": "Seller 3",
-                "availableQuantity": 8
-            },
-            {
-                "picture": "image4.jpg",
-                "name": "Toy Car 4",
-                "price": "$20",
-                "rating": 4.9,
-                "sellerToyName": "Seller 4",
-                "availableQuantity": 2
+                "picture": "https://img.freepik.com/free-photo/yellow-sport-car-with-black-autotuning-road_114579-5051.jpg?w=740&t=st=1684606471~exp=1684607071~hmac=d3c7da36ada9f687a1f5a60143a6016619ff1268d336c046f882bebb42d5cdc3",
+                "name": "TFuturistic Yellow Car",
+                "price": "$15",
+                "rating": 4.2,
+                "sellerToyName": "Futuristic LTd",
+                "availableQuantity": 3
             }
         ]
     }

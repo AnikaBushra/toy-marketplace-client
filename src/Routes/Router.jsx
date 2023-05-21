@@ -14,7 +14,7 @@ export const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>,
-                loader: async () => await fetch("http://localhost:5000/toys")
+                loader: async () => await fetch("https://y-red-six.vercel.app/allToys")
             },
             {
                 path: 'login',
