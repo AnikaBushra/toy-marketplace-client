@@ -29,7 +29,7 @@ export const router = createBrowserRouter([
             {
                 path: 'allToys',
                 element: <AllToys></AllToys>,
-                loader: async () => await fetch("https://y-red-six.vercel.app/allToys")
+                loader: async () => await fetch("https://y-red-six.vercel.app/addAToy")
             },
             {
                 path: 'addAToy',

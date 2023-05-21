@@ -47,7 +47,9 @@ const AddAToys = () => {
 
     return (
         <div>
+            <h2 className="text-4xl my-8 text-center">Please add a toy </h2>
             <div className="hero min-h-screen bg-base-200  ">
+
                 <div className="hero-content w-full">
 
                     <div className="card w-full shadow-2xl bg-gray-300">
