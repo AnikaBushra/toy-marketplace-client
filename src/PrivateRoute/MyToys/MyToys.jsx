@@ -3,9 +3,11 @@ import { AuthContext } from "../../Pages/Providers/AuthProvider";
 import MyToysTable from "../../Pages/MyToysTable/MyToysTable";
 import Swal from "sweetalert2";
 import MyToyUpdateModal from "./MyToyUpdateModal";
+import useTitle from "../../hooks/useTitle";
 
 
 const MyToys = () => {
+    useTitle('MyToys')
     const { user } = useContext(AuthContext)
     const [singleData, setSingleData] = useState({})
     const [datas, setDatas] = useState([])

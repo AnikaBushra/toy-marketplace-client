@@ -2,10 +2,11 @@
 
 import { useLoaderData } from "react-router-dom";
 import AllToytable from "../AllToytable/AllToytable";
+import useTitle from "../../hooks/useTitle";
 
 const AllToys = () => {
     const datas = useLoaderData()
-
+    useTitle('AllToys')
     return (
         <div>
 
