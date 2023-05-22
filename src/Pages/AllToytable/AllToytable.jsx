@@ -1,7 +1,7 @@
 
 
 const AllToytable = ({ data }) => {
-    console.log(data);
+
     const { name, category, sellerName, price, quantity } = data
     return (
         <>
