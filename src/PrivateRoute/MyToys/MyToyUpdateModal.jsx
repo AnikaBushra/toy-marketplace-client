@@ -1,7 +1,7 @@
 import Swal from "sweetalert2";
 
 
-const MyToyUpdateModal = ({ singleData }) => {
+const MyToyUpdateModal = ({ singleData, setSingleData }) => {
 
     const { description, price, quantity, _id } = singleData;
 
@@ -35,6 +35,7 @@ const MyToyUpdateModal = ({ singleData }) => {
                         icon: 'success',
 
                     })
+                    setSingleData(data)
                 }
             })
 

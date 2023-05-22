@@ -90,6 +90,7 @@ const MyToys = () => {
             {/* update data with modal  */}
             <MyToyUpdateModal
                 singleData={singleData}
+                setSingleData={setSingleData}
             ></MyToyUpdateModal>
 
 
