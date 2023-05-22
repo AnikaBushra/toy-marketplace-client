@@ -5,8 +5,10 @@ import AllToytable from "../AllToytable/AllToytable";
 
 const AllToys = () => {
     const datas = useLoaderData()
+
     return (
         <div>
+
             <div className="overflow-x-auto">
                 <table className="table table-compact w-full">
                     <thead>
