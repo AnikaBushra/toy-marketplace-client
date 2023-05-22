@@ -2,10 +2,12 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../../Pages/Providers/AuthProvider";
 import MyToysTable from "../../Pages/MyToysTable/MyToysTable";
 import Swal from "sweetalert2";
+import MyToyUpdateModal from "./MyToyUpdateModal";
 
 
 const MyToys = () => {
     const { user } = useContext(AuthContext)
+    const [singleData, setSingleData] = useState({})
     const [datas, setDatas] = useState([])
     useState(() => {
         fetch(`http://localhost:5000/addAToy?email=${user.email}`)
@@ -48,6 +50,11 @@ const MyToys = () => {
 
     }
 
+    const handleUpdate = (id) => {
+        const data = datas.find(data => data._id === id)
+
+        setSingleData(data)
+    }
 
     return (
         <div>
@@ -57,8 +64,9 @@ const MyToys = () => {
                     <thead>
                         <tr>
                             <th></th>
-                            <th>Seller</th>
                             <th>Name</th>
+                            <th>Seller</th>
+
                             <th>Sub Category</th>
                             <th>Price</th>
                             <th>Available Quantity</th>
@@ -69,6 +77,7 @@ const MyToys = () => {
                         {
                             datas.map(data => <MyToysTable
                                 key={data._id}
+                                handleUpdate={handleUpdate}
                                 handleDelete={handleDelete}
                                 data={data}
                             ></MyToysTable>)
@@ -78,8 +87,13 @@ const MyToys = () => {
 
                 </table>
             </div>
+            {/* update data with modal  */}
+            <MyToyUpdateModal
+                singleData={singleData}
+            ></MyToyUpdateModal>
 
-        </div>
+
+        </div >
     );
 };
 
