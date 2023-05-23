@@ -18,7 +18,7 @@ const MyToyUpdateModal = ({ singleData, setSingleData }) => {
         const updatedProduct = {
             price, quantity, description
         }
-        fetch(`http://localhost:5000/addAToy/${_id}`, {
+        fetch(`https://y-red-six.vercel.app/addAToy/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

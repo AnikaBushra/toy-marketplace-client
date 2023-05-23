@@ -33,7 +33,7 @@ export const router = createBrowserRouter([
             {
                 path: 'allToys',
                 element: <AllToys></AllToys>,
-                loader: async () => await fetch("http://localhost:5000/addAToy")
+                loader: async () => await fetch("https://y-red-six.vercel.app/addAToy")
             },
             {
                 path: 'addAToy',
@@ -46,7 +46,7 @@ export const router = createBrowserRouter([
             {
                 path: 'details/:id',
                 element: <PrivateRoute><Details></Details></PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5000/addAToy/${params.id}`)
+                loader: ({ params }) => fetch(`https://y-red-six.vercel.app/addAToy/${params.id}`)
             },
             {
                 path: 'blogs',

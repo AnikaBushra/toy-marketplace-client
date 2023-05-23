@@ -2,6 +2,7 @@
 import useTitle from "../../hooks/useTitle";
 import Banner from "../Banner/Banner";
 import Categories from "../Categories/Categories";
+import ClientReview from "../ClientReview/ClientReview";
 import Gallary from "../Gallary/Gallary";
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
             <Banner></Banner>
             <Gallary></Gallary>
             <Categories></Categories>
+            <ClientReview></ClientReview>
         </div>
     );
 };

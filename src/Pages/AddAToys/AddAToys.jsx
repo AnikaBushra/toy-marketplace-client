@@ -24,7 +24,7 @@ const AddAToys = () => {
             imageUrl, name, sellerName, email, subCategory, price, rating, quantity, description
         }
 
-        fetch(`http://localhost:5000/addAToy`, {
+        fetch(`https://y-red-six.vercel.app/addAToy`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

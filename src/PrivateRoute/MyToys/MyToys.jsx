@@ -12,7 +12,7 @@ const MyToys = () => {
     const [singleData, setSingleData] = useState({})
     const [datas, setDatas] = useState([])
     useState(() => {
-        fetch(`http://localhost:5000/addAToy?email=${user.email}`)
+        fetch(`https://y-red-six.vercel.app/addAToy?email=${user.email}`)
             .then(res => res.json())
             .then(data => setDatas(data))
     }, []);
@@ -27,7 +27,7 @@ const MyToys = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/addAToy/${id}`, {
+                fetch(`https://y-red-six.vercel.app/addAToy/${id}`, {
                     method: 'DELETE',
 
                 })
