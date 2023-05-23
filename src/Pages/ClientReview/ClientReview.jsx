@@ -13,7 +13,7 @@ const ClientReview = () => {
             </div>
             <div className='flex p-10 mx-20' data-aos="zoom-in-down" data-aos-easing="ease-in">
                 <div>
-                    <p className='text-3xl w-96 text-blue-500 my-auto'><i>The range of good tasty meals is enormous which means that never bored with the same old meal</i></p>
+                    <p className='text-3xl w-96 text-blue-500 my-auto'><i>KidsZone is a children toy selling for children aged 2–6</i></p>
                     <p className='text-xl w-96 text-green-600 m-6'>Ali  ahmed </p>
                 </div>
                 <img className='w-64 mx-10 rounded-full' src="https://as2.ftcdn.net/v2/jpg/01/15/85/23/1000_F_115852367_E6iIYA8OxHDmRhjw7kOq4uYe4t440f14.jpg" alt="" />
