@@ -1,9 +1,10 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Providers/AuthProvider";
 
 
 const Login = () => {
+    const [error, setError] = useState('')
     const navigate = useNavigate()
     const location = useLocation()
     const from = location.state?.from?.pathname || '/';
@@ -13,7 +14,7 @@ const Login = () => {
         const form = e.target;
         const email = form.email.value;
         const password = form.password.value;
-        console.log(email, password);
+        setError('')
         logIn(email, password)
             .then(result => {
                 const user = result.user;
@@ -21,7 +22,7 @@ const Login = () => {
                 navigate(from, { replace: true })
             })
             .catch(error => {
-                console.log(error.message);
+                setError(error.message);
             })
     }
     const handleLoginGoogle = () => {
@@ -32,7 +33,7 @@ const Login = () => {
                 navigate(from, { replace: true })
             })
             .catch(error => {
-                console.log(error.message);
+                setError(error.message);
             })
     }
     return (
@@ -62,6 +63,7 @@ const Login = () => {
                                         name="password" className="input input-bordered" />
 
                                 </div>
+                                <p className="text-red-500">{error}</p>
                                 <div className="form-control mt-6">
                                     <button className="btn btn-primary">Login</button>
                                 </div>
