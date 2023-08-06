@@ -13,7 +13,7 @@ const Categories = () => {
 
     return (
         <div>
-            <h2 className='text-5xl text-center m-10'>Search by Categories</h2>
+            <h2 className='text-5xl text-center m-10'>Shop by Categories</h2>
             <div className='flex justify-around my-8'>
                 <Tabs>
                     <TabList>

@@ -4,6 +4,7 @@ import Banner from "../Banner/Banner";
 import Categories from "../Categories/Categories";
 import ClientReview from "../ClientReview/ClientReview";
 import Gallary from "../Gallary/Gallary";
+import KidBlogs from "../KidBlogs/KidBlogs";
 import Payment from "../Payment/Payment";
 
 const Home = () => {
@@ -15,8 +16,9 @@ const Home = () => {
             <Banner></Banner>
             <Gallary></Gallary>
             <Categories></Categories>
-            <ClientReview></ClientReview>
             <Payment></Payment>
+            <ClientReview></ClientReview>
+            <KidBlogs></KidBlogs>
         </div>
     );
 };
